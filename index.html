@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harshita Traders - Complete Solutions for Water, Energy & Electrical Needs. Water Treatment, Heat Pumps, Solar Energy, and more.">
+    <title>Harshita Traders | Water, Energy & Electrical Solutions</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css?v=5">
+    
+    <!-- Icons via Phosphor Icons (Lucide alternative without build step) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo-round.png" alt="Harshita Traders Logo" class="logo-img">
+                HARSHITA<span>TRADERS</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#about">About</a>
+                <a href="#brands">Brands</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>HARSHITA <span>TRADERS</span></h1>
+                <h2>Complete Solutions for Water, Energy & Electrical Needs</h2>
+                <div class="categories">
+                    Water Treatment | Heat Pumps | Solar Energy | Electrical & Lighting Solutions
+                </div>
+                <p>Reliable products. Trusted brands. Complete solutions for Residential, Commercial & Industrial requirements.</p>
+                <div class="hero-btns">
+                    <a href="#solutions" class="btn btn-primary">Explore Solutions <i class="ph ph-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Our Core Solutions -->
+    <section id="solutions" class="section solutions">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Our Core Solutions</h2>
+            <div class="solutions-grid">
+                
+                <!-- Card 1 -->
+                <div class="solution-card animate-on-scroll color-water" data-target="detail-water" style="cursor: pointer;">
+                    <div class="icon-wrapper">
+                        <i class="ph ph-drop"></i>
+                    </div>
+                    <h3>Water Treatment Solutions</h3>
+                    <p>RO Systems, Water Softeners, Filters and complete water treatment solutions for all your needs.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="solution-card animate-on-scroll color-heat" data-target="detail-heat" style="cursor: pointer;">
+                    <div class="icon-wrapper">
+                        <i class="ph ph-thermometer-hot"></i>
+                    </div>
+                    <h3>Hot Water Solutions</h3>
+                    <p>Energy-efficient hot water solutions for homes, hotels, hospitals, institutions and commercial applications.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="solution-card animate-on-scroll color-solar" data-target="detail-solar" style="cursor: pointer;">
+                    <div class="icon-wrapper">
+                        <i class="ph ph-sun-dim"></i>
+                    </div>
+                    <h3>Solar Energy Solutions</h3>
+                    <p>Solar solutions for residential, commercial and industrial applications for a sustainable future.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="solution-card animate-on-scroll color-lighting" data-target="detail-lighting" style="cursor: pointer;">
+                    <div class="icon-wrapper">
+                        <i class="ph ph-lightbulb"></i>
+                    </div>
+                    <h3>Lighting & Electrical Solutions</h3>
+                    <p>Lighting, cables, switches and electrical products from leading brands for every requirement.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="solution-card animate-on-scroll color-pumps" data-target="detail-pumps" style="cursor: pointer;">
+                    <div class="icon-wrapper">
+                        <i class="ph ph-arrows-out-line-vertical"></i>
+                    </div>
+                    <h3>Pumps & Water Circulation</h3>
+                    <p>Reliable pumping and water circulation solutions customized for different applications.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="solution-card animate-on-scroll color-projects" data-target="detail-projects" style="cursor: pointer;">
+                    <div class="icon-wrapper">
+                        <i class="ph ph-buildings"></i>
+                    </div>
+                    <h3>Project Solutions</h3>
+                    <p>End-to-end solutions designed specifically for residential, commercial, institutional and industrial projects.</p>
+                </div>
+
+            </div>
+
+            <!-- Inline Detailed Product Sections -->
+            <div id="solution-details-container" class="solution-details-container" style="display: none; margin-top: 3rem; padding-top: 3rem; border-top: 2px solid rgba(2, 48, 71, 0.05); animation: fadeUp 0.5s ease forwards;">
+                
+                <!-- Detail: Pumps & Water Circulation -->
+                <div id="detail-pumps" class="solution-detail-block" style="display: none;">
+                    <div class="modal-header" style="margin-bottom: 2rem;">
+                        <h2 class="text-pumps">Pressure Boosting Pumping Solutions</h2>
+                        <p style="color: var(--text-gray); margin-top: 0.5rem;">Partnering with leading brands: EBARA, DAYUAN PUMP, FORAS WATER PUMP, KSB</p>
+                    </div>
+                    
+                    <div class="detail-content-wrapper">
+                        <div class="detail-text-side">
+                            <h3 style="margin-bottom: 1.5rem; color: var(--text-dark);">Products:</h3>
+                            <div class="product-list">
+                                <div class="product-item">
+                                    <i class="ph-fill ph-drop" style="color: #023047;"></i>
+                                    <div>
+                                        <h4>Under Ground Openwell Pump</h4>
+                                        <p style="font-size: 0.9rem; color: var(--text-gray);">High efficiency pumping for underground tanks.</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <i class="ph-fill ph-funnel" style="color: #023047;"></i>
+                                    <div>
+                                        <h4>Filter Feed Pump</h4>
+                                        <p style="font-size: 0.9rem; color: var(--text-gray);">Reliable feed for filtration systems.</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <i class="ph-fill ph-gauge" style="color: #023047;"></i>
+                                    <div>
+                                        <h4>Pressure Booster</h4>
+                                        <p style="font-size: 0.9rem; color: var(--text-gray);">Maintain consistent water pressure across floors.</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <i class="ph-fill ph-thermometer-hot" style="color: #023047;"></i>
+                                    <div>
+                                        <h4>Hot Water Circulation Pump</h4>
+                                        <p style="font-size: 0.9rem; color: var(--text-gray);">Instant hot water circulation for commercial needs.</p>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <i class="ph-fill ph-recycle" style="color: #023047;"></i>
+                                    <div>
+                                        <h4>Sewage Pump</h4>
+                                        <p style="font-size: 0.9rem; color: var(--text-gray);">Robust pumps for waste and sewage management.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-image-side">
+                            <img src="pump-image.jpg" alt="Under Ground Openwell Pumps Collection">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detail: Water Treatment -->
+                <div id="detail-water" class="solution-detail-block" style="display: none;">
+                    <!-- 1. Selection View -->
+                    <div id="water-options-view" style="text-align: center; padding: 2rem 0; animation: fadeUp 0.5s ease forwards;">
+                        <h2 class="text-water" style="margin-bottom: 2rem; font-size: 2rem;">Select a Water Treatment Solution</h2>
+                        <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                            
+                            <!-- Option 1: Softener -->
+                            <div onclick="document.getElementById('water-options-view').style.display='none'; document.getElementById('water-softener-view').style.display='block'; window.scrollTo({top: document.getElementById('solution-details-container').offsetTop - 80, behavior: 'smooth'});" style="background: rgba(255,255,255,0.8); border: 1px solid rgba(33, 158, 188, 0.2); padding: 3rem; border-radius: 1rem; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; width: 280px; box-shadow: 0 4px 10px rgba(2, 48, 71, 0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 20px rgba(2, 48, 71, 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(2, 48, 71, 0.05)';">
+                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(33, 158, 188, 0.1), rgba(33, 158, 188, 0.2)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto;">
+                                    <i class="ph-fill ph-drop" style="font-size: 3rem; color: #219ebc;"></i>
+                                </div>
+                                <h3 class="text-water" style="font-size: 1.5rem; margin-bottom: 0.5rem;">Water Softener</h3>
+                                <p style="color: var(--text-gray); font-size: 0.95rem;">Solutions to reduce hardness and protect equipment.</p>
+                            </div>
+                            
+                            <!-- Option 2: RO -->
+                            <div onclick="document.getElementById('water-options-view').style.display='none'; document.getElementById('water-ro-view').style.display='block'; window.scrollTo({top: document.getElementById('solution-details-container').offsetTop - 80, behavior: 'smooth'});" style="background: rgba(255,255,255,0.8); border: 1px solid rgba(33, 158, 188, 0.2); padding: 3rem; border-radius: 1rem; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; width: 280px; box-shadow: 0 4px 10px rgba(2, 48, 71, 0.05);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 20px rgba(2, 48, 71, 0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(2, 48, 71, 0.05)';">
+                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(33, 158, 188, 0.1), rgba(33, 158, 188, 0.2)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto;">
+                                    <i class="ph-fill ph-funnel" style="font-size: 3rem; color: #219ebc;"></i>
+                                </div>
+                                <h3 class="text-water" style="font-size: 1.5rem; margin-bottom: 0.5rem;">RO Systems</h3>
+                                <p style="color: var(--text-gray); font-size: 0.95rem;">Advanced reverse osmosis purification systems.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- 2. Water Softener Detail View -->
+                    <div id="water-softener-view" style="display: none; animation: fadeUp 0.5s ease forwards;">
+                        <button onclick="document.getElementById('water-softener-view').style.display='none'; document.getElementById('water-options-view').style.display='block'; window.scrollTo({top: document.getElementById('solution-details-container').offsetTop - 80, behavior: 'smooth'});" class="btn btn-outline" style="margin-bottom: 2rem; border-color: rgba(33, 158, 188, 0.3); color: #219ebc; padding: 0.5rem 1rem;">&larr; Back to Water Options</button>
+                        
+                        <div class="modal-header" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(33, 158, 188, 0.2); padding-bottom: 1rem;">
+                            <h2 class="text-water">WATER SOFTENER SYSTEMS</h2>
+                            <p style="color: var(--text-gray); font-size: 1.1rem; margin-top: 0.5rem; font-weight: 500;">Say Goodbye to Hard Water</p>
+                        </div>
+
+                    <div style="margin-bottom: 3rem;">
+                        <p style="font-size: 1.1rem; color: var(--text-gray); line-height: 1.6; max-width: 800px;">
+                            Effective water softening solutions designed to reduce hardness and protect your pipes, geysers, heat pumps, bathrooms, appliances and water systems from scale formation.
+                        </p>
+                        <p style="margin-top: 1rem; font-weight: 600; color: #219ebc; font-size: 1.2rem;">
+                            Better Water &bull; Better Protection &bull; Better Life
+                        </p>
+                        <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="#contact" class="btn btn-primary" style="background: linear-gradient(45deg, #023047, #219ebc); box-shadow: 0 4px 15px rgba(33, 158, 188, 0.4);">Get a Quote</a>
+                            <a href="#contact" class="btn btn-outline" style="border-color: #219ebc; color: #219ebc;">Talk to Our Expert</a>
+                        </div>
+                    </div>
+
+                    <div class="detail-content-wrapper" style="margin-bottom: 4rem;">
+                        <div class="detail-text-side">
+                            <h3 class="text-water" style="margin-bottom: 1rem;">What is a Water Softener?</h3>
+                            <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1rem;">
+                                Hard water contains high levels of minerals such as calcium and magnesium, which can cause scale deposits and affect plumbing, appliances and water-heating equipment.
+                            </p>
+                            <p style="color: var(--text-gray); line-height: 1.7;">
+                                Our water softener solutions use ion-exchange technology to reduce hardness and provide softened water for residential, commercial and industrial applications.
+                            </p>
+                        </div>
+                        <div class="detail-image-side">
+                            <img src="water-softener-diagram.jpg" alt="Benefits of a Water Softener Diagram" style="max-width: 100%; border-radius: 1rem; box-shadow: var(--shadow-md); display: block; margin: 0 auto; border: 1px solid rgba(33, 158, 188, 0.1);">
+                        </div>
+                    </div>
+
+                    <h3 class="text-water" style="margin-bottom: 1.5rem; text-align: center;">Our Water Softener Solutions</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+                        <div style="background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(33, 158, 188, 0.1); transition: transform 0.3s ease;">
+                            <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-house" style="color: #219ebc; font-size: 1.2rem;"></i> Residential</h4>
+                            <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.5;">Suitable for homes, apartments and villas to help control hardness throughout the household supply.</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(33, 158, 188, 0.1); transition: transform 0.3s ease;">
+                            <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-buildings" style="color: #219ebc; font-size: 1.2rem;"></i> Commercial</h4>
+                            <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.5;">Designed for hotels, restaurants, hospitals, schools, offices and other commercial establishments.</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(33, 158, 188, 0.1); transition: transform 0.3s ease;">
+                            <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-factory" style="color: #219ebc; font-size: 1.2rem;"></i> Industrial</h4>
+                            <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.5;">Higher-capacity systems for industrial and process-water applications where hardness control is critical.</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(33, 158, 188, 0.1); transition: transform 0.3s ease;">
+                            <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-gear" style="color: #219ebc; font-size: 1.2rem;"></i> Automatic</h4>
+                            <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.5;">Automated regeneration systems designed for convenient operation and consistent soft-water availability.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-water" style="margin-bottom: 1.5rem; text-align: center;">Key Benefits</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+                        <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(33, 158, 188, 0.02); border-radius: 0.5rem;">
+                            <i class="ph-fill ph-check-circle" style="color: #10b981; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                            <div>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Reduces Scale</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray);">Helps control scale formation in pipelines, fittings and equipment.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(33, 158, 188, 0.02); border-radius: 0.5rem;">
+                            <i class="ph-fill ph-check-circle" style="color: #10b981; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                            <div>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Protects Heating</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray);">Protects geysers, heat pumps, boilers and other heating equipment.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(33, 158, 188, 0.02); border-radius: 0.5rem;">
+                            <i class="ph-fill ph-check-circle" style="color: #10b981; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                            <div>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Better Bathing</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray);">Softened water can provide a smoother feel on skin and hair.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(33, 158, 188, 0.02); border-radius: 0.5rem;">
+                            <i class="ph-fill ph-check-circle" style="color: #10b981; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                            <div>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Improves Appliances</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray);">Reduces deposits in washing machines, dishwashers and appliances.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(33, 158, 188, 0.05); padding: 2rem; border-radius: 1rem; text-align: center; border: 1px solid rgba(33, 158, 188, 0.1);">
+                        <h3 class="text-water" style="margin-bottom: 1rem; font-size: 1.2rem;">Trusted Brands in Water Softening</h3>
+                        <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; font-size: 1.3rem; font-weight: 700; color: #023047;">
+                            <span>ZeroB</span>
+                            <span style="color: rgba(33, 158, 188, 0.3); font-weight: 300;">|</span>
+                            <span>Pentair</span>
+                        </div>
+                    </div>
+                    </div> <!-- End of water-softener-view -->
+
+                    <!-- 3. RO Detail View -->
+                    <div id="water-ro-view" style="display: none; animation: fadeUp 0.5s ease forwards;">
+                        <button onclick="document.getElementById('water-ro-view').style.display='none'; document.getElementById('water-options-view').style.display='block'; window.scrollTo({top: document.getElementById('solution-details-container').offsetTop - 80, behavior: 'smooth'});" class="btn btn-outline" style="margin-bottom: 2rem; border-color: rgba(33, 158, 188, 0.3); color: #219ebc; padding: 0.5rem 1rem;">&larr; Back to Water Options</button>
+                        
+                        <div class="modal-header" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(33, 158, 188, 0.2); padding-bottom: 1rem;">
+                            <h2 class="text-water">CENTRALIZED RO SYSTEMS</h2>
+                            <p style="color: var(--text-gray); font-size: 1.1rem; margin-top: 0.5rem; font-weight: 500;">Say Goodbye to Impurities &amp; High TDS</p>
+                        </div>
+
+                        <div style="margin-bottom: 3rem;">
+                            <p style="font-size: 1.1rem; color: var(--text-gray); line-height: 1.6; max-width: 800px;">
+                                Effective centralized reverse osmosis solutions designed to eliminate dissolved solids, heavy metals, chemicals, and contaminants to deliver ultra-pure water across your entire property, building, or industrial facility.
+                            </p>
+                            <p style="margin-top: 1rem; font-weight: 600; color: #219ebc; font-size: 1.2rem;">
+                                Pure Water &bull; Total Protection &bull; Healthy Life
+                            </p>
+                            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <a href="#contact" class="btn btn-primary" style="background: linear-gradient(45deg, #023047, #219ebc); box-shadow: 0 4px 15px rgba(33, 158, 188, 0.4);">Get a Quote</a>
+                                <a href="#contact" class="btn btn-outline" style="border-color: #219ebc; color: #219ebc;">Talk to Our Expert</a>
+                            </div>
+                        </div>
+
+                        <div class="detail-content-wrapper" style="margin-bottom: 4rem;">
+                            <div class="detail-text-side">
+                                <h3 class="text-water" style="margin-bottom: 1rem;">What is a Centralized RO System?</h3>
+                                <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1rem;">
+                                    High Total Dissolved Solids (TDS), heavy metals, salinity, and chemical contaminants in raw water can compromise drinking safety, stain fixtures, and damage sensitive commercial or industrial processes.
+                                </p>
+                                <p style="color: var(--text-gray); line-height: 1.7;">
+                                    Our centralized RO solutions utilize advanced semi-permeable membrane technology to systematically remove up to 99% of dissolved salts, heavy metals, and micro-impurities from the main water supply before distributing clean water throughout your entire building.
+                                </p>
+                            </div>
+                            <div class="detail-image-side">
+                                <img src="ro-system-diagram.jpg" alt="Reverse Osmosis (RO) System Diagram" style="max-width: 100%; border-radius: 1rem; box-shadow: var(--shadow-md); display: block; margin: 0 auto; border: 1px solid rgba(33, 158, 188, 0.1);">
+                            </div>
+                        </div>
+
+                        <h3 class="text-water" style="margin-bottom: 1.5rem; text-align: center;">Our Centralized RO Solutions</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+                            <div style="background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(33, 158, 188, 0.1); transition: transform 0.3s ease;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-house" style="color: #219ebc; font-size: 1.2rem;"></i> Residential</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.5;">Suitable for whole-house supply, luxury villas, and apartment complexes.</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(33, 158, 188, 0.1); transition: transform 0.3s ease;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-buildings" style="color: #219ebc; font-size: 1.2rem;"></i> Commercial</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.5;">Designed for hotels, restaurants, hospitals, educational institutions, and offices.</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(33, 158, 188, 0.1); transition: transform 0.3s ease;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-factory" style="color: #219ebc; font-size: 1.2rem;"></i> Industrial</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.5;">High-capacity plants for manufacturing, pharma, F&amp;B, and chemical processing.</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(33, 158, 188, 0.1); transition: transform 0.3s ease;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-gear" style="color: #219ebc; font-size: 1.2rem;"></i> Automatic</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.5;">PLC-controlled fully automated systems featuring auto-flushing and continuous monitoring.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-water" style="margin-bottom: 1.5rem; text-align: center;">Key Benefits</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(33, 158, 188, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #10b981; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Significant TDS Reduction</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Removes up to 99% of TDS, salinity, heavy metals, and harmful chemical contaminants.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(33, 158, 188, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #10b981; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Pure Water Everywhere</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Provides consistent, drinking-grade water throughout your entire building.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(33, 158, 188, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #10b981; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Protects Premium Plumbing</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Prevents mineral staining, scaling, and internal pipe corrosion.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(33, 158, 188, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #10b981; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Superior Taste &amp; Health</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Eliminates pesticides, nitrates, micro-plastics, bacteria, and bad odor.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(33, 158, 188, 0.05); padding: 2rem; border-radius: 1rem; text-align: center; border: 1px solid rgba(33, 158, 188, 0.1);">
+                            <h3 class="text-water" style="margin-bottom: 1rem; font-size: 1.2rem;">Trusted Brands</h3>
+                            <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; font-size: 1.3rem; font-weight: 700; color: #023047;">
+                                <span>DuPont FilmTec</span>
+                                <span style="color: rgba(33, 158, 188, 0.3); font-weight: 300;">|</span>
+                                <span>Hydranautics</span>
+                                <span style="color: rgba(33, 158, 188, 0.3); font-weight: 300;">|</span>
+                                <span>Toray</span>
+                                <span style="color: rgba(33, 158, 188, 0.3); font-weight: 300;">|</span>
+                                <span>Pentair</span>
+                                <span style="color: rgba(33, 158, 188, 0.3); font-weight: 300;">|</span>
+                                <span>Grundfos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detail: Hot Water Solutions -->
+                <div id="detail-heat" class="solution-detail-block" style="display: none;">
+                    
+                    <!-- 1. Options View (Default) -->
+                    <div id="heat-options-view">
+                        <div class="modal-header" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(251, 133, 0, 0.2); padding-bottom: 1rem;">
+                            <h2 class="text-heat">HOT WATER SOLUTIONS</h2>
+                            <p style="color: var(--text-gray); font-size: 1.1rem; margin-top: 0.5rem; font-weight: 500;">Energy-efficient hot water systems for every need</p>
+                        </div>
+
+                        <div style="margin-bottom: 3rem;">
+                            <p style="font-size: 1.1rem; color: var(--text-gray); line-height: 1.6; max-width: 800px;">
+                                We provide robust and highly efficient hot water solutions designed for residential, commercial, and industrial applications. Ensure a reliable supply of hot water while drastically reducing energy consumption.
+                            </p>
+                        </div>
+
+                        <h3 class="text-heat" style="margin-bottom: 1.5rem; text-align: center;">Products</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                            <!-- Product 1 (Clickable) -->
+                            <div onclick="document.getElementById('heat-options-view').style.display='none'; document.getElementById('heat-commercial-view').style.display='block'; window.scrollTo({top: document.getElementById('solution-details-container').offsetTop - 80, behavior: 'smooth'});" style="background: rgba(255,255,255,0.7); padding: 2.5rem 1.5rem; border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1); display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 4px 15px rgba(251, 133, 0, 0.05); transition: transform 0.3s ease; cursor: pointer;">
+                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(251, 133, 0, 0.1), rgba(251, 133, 0, 0.2)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                                    <i class="ph-fill ph-thermometer-hot" style="font-size: 3rem; color: #fb8500;"></i>
+                                </div>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.3rem;">Commercial Heat Pump</h4>
+                                <p style="font-size: 1rem; color: var(--text-gray); line-height: 1.5;">High-efficiency heat pumps for hotels, hospitals, and large facilities.</p>
+                            </div>
+                            
+                            <!-- Product 2 -->
+                            <div style="background: rgba(255,255,255,0.7); padding: 2.5rem 1.5rem; border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1); display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 4px 15px rgba(251, 133, 0, 0.05); transition: transform 0.3s ease;">
+                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(251, 133, 0, 0.1), rgba(251, 133, 0, 0.2)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                                    <i class="ph-fill ph-drop" style="font-size: 3rem; color: #fb8500;"></i>
+                                </div>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.3rem;">Individual Geysers</h4>
+                                <p style="font-size: 1rem; color: var(--text-gray); line-height: 1.5;">Reliable and quick heating geysers perfect for residential use.</p>
+                            </div>
+
+                            <!-- Product 3 -->
+                            <div style="background: rgba(255,255,255,0.7); padding: 2.5rem 1.5rem; border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1); display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 4px 15px rgba(251, 133, 0, 0.05); transition: transform 0.3s ease;">
+                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(251, 133, 0, 0.1), rgba(251, 133, 0, 0.2)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                                    <i class="ph-fill ph-database" style="font-size: 3rem; color: #fb8500;"></i>
+                                </div>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.3rem;">Hot Water Mixing Tanks</h4>
+                                <p style="font-size: 1rem; color: var(--text-gray); line-height: 1.5;">Durable storage and mixing solutions to maintain consistent temperature.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Commercial Heat Pump Detail View -->
+                    <div id="heat-commercial-view" style="display: none; animation: fadeUp 0.5s ease forwards;">
+                        <button onclick="document.getElementById('heat-commercial-view').style.display='none'; document.getElementById('heat-options-view').style.display='block'; window.scrollTo({top: document.getElementById('solution-details-container').offsetTop - 80, behavior: 'smooth'});" class="btn btn-outline" style="margin-bottom: 2rem; border-color: rgba(251, 133, 0, 0.3); color: #fb8500; padding: 0.5rem 1rem;">&larr; Back to Products</button>
+                        
+                        <div class="modal-header" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(251, 133, 0, 0.2); padding-bottom: 1rem;">
+                            <h2 class="text-heat">COMMERCIAL HEAT PUMP SYSTEMS</h2>
+                            <p style="color: var(--text-gray); font-size: 1.1rem; margin-top: 0.5rem; font-weight: 500;">Say Goodbye to Excessive Heating Energy Bills</p>
+                        </div>
+
+                        <div style="margin-bottom: 3rem;">
+                            <p style="font-size: 1.1rem; color: var(--text-gray); line-height: 1.6; max-width: 800px;">
+                                Highly efficient commercial heat pump solutions engineered to deliver continuous hot water at scale while reducing operational electricity consumption by up to 70%.
+                            </p>
+                            <p style="margin-top: 1rem; font-weight: 600; color: #fb8500; font-size: 1.2rem;">
+                                High Efficiency &bull; Lower Energy Bills &bull; Sustainable Heating
+                            </p>
+                            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                                <a href="#contact" class="btn btn-primary" style="background: linear-gradient(45deg, #d81159, #fb8500); box-shadow: 0 4px 15px rgba(251, 133, 0, 0.4);">Get a Quote</a>
+                                <a href="#contact" class="btn btn-outline" style="border-color: #fb8500; color: #fb8500;">Talk to Our Expert</a>
+                            </div>
+                        </div>
+
+                        <div class="detail-content-wrapper" style="margin-bottom: 4rem;">
+                            <div class="detail-text-side">
+                                <h3 class="text-heat" style="margin-bottom: 1rem;">What is a Commercial Heat Pump?</h3>
+                                <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1rem;">
+                                    Water heating often accounts for a major portion of commercial operational expenses. Conventional electrical boilers and geysers consume massive amounts of power, leading to inflated electricity bills and high carbon footprints.
+                                </p>
+                                <p style="color: var(--text-gray); line-height: 1.7;">
+                                    Our commercial heat pumps extract free thermal energy from the ambient air and transfer it directly into water using thermodynamic vapor compression cycles, delivering massive energy savings and reliable hot water on demand.
+                                </p>
+                            </div>
+                            <div class="detail-image-side" style="background: rgba(251, 133, 0, 0.05); padding: 2rem; border-radius: 1rem; display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; border: 1px solid rgba(251, 133, 0, 0.1);">
+                                <h3 class="text-heat" style="margin-bottom: 0.5rem;">How it Works</h3>
+                                <div style="display: flex; flex-direction: column; gap: 0.5rem; color: var(--text-gray); font-weight: 500;">
+                                    <div style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-wind" style="color: #fb8500; font-size: 1.2rem;"></i> Ambient Air Heat Intake</div>
+                                    <div style="margin-left: 0.5rem; color: rgba(251, 133, 0, 0.4);">↓</div>
+                                    <div style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-thermometer" style="color: #fb8500; font-size: 1.2rem;"></i> Evaporator Refrigerant Absorption</div>
+                                    <div style="margin-left: 0.5rem; color: rgba(251, 133, 0, 0.4);">↓</div>
+                                    <div style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-gauge" style="color: #fb8500; font-size: 1.2rem;"></i> Compressor Pressure &amp; Heat Boost</div>
+                                    <div style="margin-left: 0.5rem; color: rgba(251, 133, 0, 0.4);">↓</div>
+                                    <div style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-arrows-left-right" style="color: #fb8500; font-size: 1.2rem;"></i> Heat Exchanger Water Transfer</div>
+                                    <div style="margin-left: 0.5rem; color: rgba(251, 133, 0, 0.4);">↓</div>
+                                    <div style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-database" style="color: #d81159; font-size: 1.2rem;"></i> Hot Water Storage Tank</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-heat" style="margin-bottom: 1.5rem; text-align: center;">Our Commercial Heat Pump Solutions</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+                            <div style="background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1); transition: transform 0.3s ease;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-buildings" style="color: #fb8500; font-size: 1.2rem;"></i> Air-Source</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.5;">Designed for standard ambient temperatures for hotels, hostels, and hospitals.</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1); transition: transform 0.3s ease;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-thermometer-hot" style="color: #fb8500; font-size: 1.2rem;"></i> High-Temperature</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.5;">Produces hot water up to 75°C–80°C for laundries, kitchens, and industrial washing.</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1); transition: transform 0.3s ease;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-snowflake" style="color: #fb8500; font-size: 1.2rem;"></i> All-Weather</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.5;">Enhanced vapor injection (EVI) technology maintains high performance in low temperatures.</p>
+                            </div>
+                            <div style="background: rgba(255,255,255,0.7); padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1); transition: transform 0.3s ease;">
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i class="ph-fill ph-sun" style="color: #fb8500; font-size: 1.2rem;"></i> Hybrid Systems</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray); line-height: 1.5;">Combines solar thermal systems with heat pumps to maximize energy savings.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-heat" style="margin-bottom: 1.5rem; text-align: center;">Key Benefits</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(251, 133, 0, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #fb8500; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Up to 70% Energy Savings</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Generates up to 4 units of heat for every 1 unit of electricity (COP up to 4.0+).</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(251, 133, 0, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #fb8500; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Fast Return on Investment</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Drastically reduces utility expenses, enabling rapid payback on initial capital.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(251, 133, 0, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #fb8500; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Eco-Friendly</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Environmentally friendly refrigerants and zero localized greenhouse gas emissions.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(251, 133, 0, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #fb8500; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Heavy-Duty Supply</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Engineered to handle high-volume hot water demands during peak hours.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(251, 133, 0, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #fb8500; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Weatherproof Design</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Anti-corrosive heat exchangers and rugged enclosures for outdoor life.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(251, 133, 0, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #fb8500; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Intelligent Controls</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Digital microprocessors, automatic defrosting, and remote monitoring.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(251, 133, 0, 0.05); padding: 2rem; border-radius: 1rem; text-align: center; border: 1px solid rgba(251, 133, 0, 0.1);">
+                            <h3 class="text-heat" style="margin-bottom: 1rem; font-size: 1.2rem;">Trusted Brands</h3>
+                            <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; font-size: 1.3rem; font-weight: 700; color: #fb8500;">
+                                <span>Racold</span>
+                                <span style="color: rgba(251, 133, 0, 0.3); font-weight: 300;">|</span>
+                                <span>AO Smith</span>
+                                <span style="color: rgba(251, 133, 0, 0.3); font-weight: 300;">|</span>
+                                <span>Rheem</span>
+                                <span style="color: rgba(251, 133, 0, 0.3); font-weight: 300;">|</span>
+                                <span>Daikin</span>
+                                <span style="color: rgba(251, 133, 0, 0.3); font-weight: 300;">|</span>
+                                <span>Mitsubishi Electric</span>
+                                <span style="color: rgba(251, 133, 0, 0.3); font-weight: 300;">|</span>
+                                <span>Venus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Detail: Solar -->
+                <div id="detail-solar" class="solution-detail-block" style="display: none;"><div class="modal-header"><h2 class="text-solar">Solar Energy Solutions</h2></div></div>
+
+                <!-- Detail: Lighting -->
+                <div id="detail-lighting" class="solution-detail-block" style="display: none;"><div class="modal-header"><h2 class="text-lighting">Lighting & Electrical Solutions</h2></div></div>
+
+                <!-- Detail: Projects -->
+                <div id="detail-projects" class="solution-detail-block" style="display: none;"><div class="modal-header"><h2 class="text-projects">Project Solutions</h2></div></div>
+                
+                <button id="close-details-btn" class="btn btn-outline" style="margin-top: 3rem;">Close Details</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Why Choose Us & 6. About -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="split-section">
+                <!-- About -->
+                <div class="animate-on-scroll">
+                    <h2 class="section-title" style="text-align: left;">About Harshita Traders</h2>
+                    <p style="font-size: 1.2rem; color: var(--text-dark); font-weight: 500; margin-bottom: 1.5rem;">
+                        Harshita Traders is a solutions-focused company providing reliable products and integrated solutions across water treatment, heat pumps, solar energy, electrical and lighting requirements.
+                    </p>
+                    <p style="color: var(--text-gray); margin-bottom: 2rem; font-size: 1.1rem;">
+                        We work with reputed brands and focus on understanding the customer's requirement before recommending the right product or system. Our ultimate goal is your complete satisfaction and operational efficiency.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">Know More About Us</a>
+                </div>
+
+                <!-- Why Us -->
+                <div class="animate-on-scroll">
+                    <h2 class="section-title" style="text-align: left;">Why Choose Us</h2>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <i class="ph-fill ph-check-circle feature-icon"></i>
+                            <span class="feature-text">Trusted & reputed brands</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="ph-fill ph-check-circle feature-icon"></i>
+                            <span class="feature-text">Complete solution under one roof</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="ph-fill ph-check-circle feature-icon"></i>
+                            <span class="feature-text">Technical product guidance</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="ph-fill ph-check-circle feature-icon"></i>
+                            <span class="feature-text">Project-based solutions</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="ph-fill ph-check-circle feature-icon"></i>
+                            <span class="feature-text">Competitive pricing</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="ph-fill ph-check-circle feature-icon"></i>
+                            <span class="feature-text">Installation & service support</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="ph-fill ph-check-circle feature-icon"></i>
+                            <span class="feature-text">Residential, commercial & industrial expertise</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Our Approach -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Our Approach</h2>
+            <p style="text-align: center; color: var(--text-gray); max-width: 600px; margin: 0 auto;">We don't simply sell products—we provide complete, end-to-end solutions tailored to your specific needs.</p>
+            
+            <div class="process-container animate-on-scroll">
+                <div class="process-step">
+                    <div class="step-icon"><i class="ph ph-clipboard-text"></i></div>
+                    <div class="step-title">Requirement</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="ph ph-users"></i></div>
+                    <div class="step-title">Consultation</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="ph ph-magnifying-glass"></i></div>
+                    <div class="step-title">Product Selection</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="ph ph-truck"></i></div>
+                    <div class="step-title">Supply</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="ph ph-wrench"></i></div>
+                    <div class="step-title">Installation</div>
+                </div>
+                <div class="process-step">
+                    <div class="step-icon"><i class="ph ph-headset"></i></div>
+                    <div class="step-title">After-Sales Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Industries We Serve -->
+    <section id="industries" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Solutions for Every Industry</h2>
+            
+            <div class="industries-grid animate-on-scroll">
+                <div class="industry-card">
+                    <span class="industry-icon">🏨</span>
+                    <h4>Hotels & Hospitality</h4>
+                </div>
+                <div class="industry-card">
+                    <span class="industry-icon">🏥</span>
+                    <h4>Hospitals & Healthcare</h4>
+                </div>
+                <div class="industry-card">
+                    <span class="industry-icon">🏫</span>
+                    <h4>Schools & Institutions</h4>
+                </div>
+                <div class="industry-card">
+                    <span class="industry-icon">🏢</span>
+                    <h4>Corporate & Commercial</h4>
+                </div>
+                <div class="industry-card">
+                    <span class="industry-icon">🏭</span>
+                    <h4>Industries & Manufacturing</h4>
+                </div>
+                <div class="industry-card">
+                    <span class="industry-icon">🏘️</span>
+                    <h4>Residential Projects</h4>
+                </div>
+                <div class="industry-card">
+                    <span class="industry-icon">🏗️</span>
+                    <h4>Builders & Developers</h4>
+                </div>
+                <div class="industry-card">
+                    <span class="industry-icon">🏛️</span>
+                    <h4>Government Projects</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Our Trusted Brands -->
+    <section id="brands" class="section brands">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Our Trusted Brands</h2>
+            <div class="brand-grid animate-on-scroll">
+                <div class="brand-item">Havells</div>
+                <div class="brand-item">A. O. Smith</div>
+                <div class="brand-item">Pentair</div>
+                <div class="brand-item">ZeroB</div>
+                <div class="brand-item">Adani</div>
+                <div class="brand-item">Polycab</div>
+                <div class="brand-item">Deye</div>
+                <div class="brand-item">Tata</div>
+                <div class="brand-item">Waaree</div>
+                <div class="brand-item">Crompton</div>
+                <div class="brand-item">Grundfos</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Call-to-Action -->
+    <section class="cta animate-on-scroll">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Looking for the Right Solution for Your Project?</h2>
+                <p>Talk to our team today for product selection, technical guidance and project requirements.</p>
+                <div class="hero-btns" style="opacity: 1; animation: none;">
+                    <a href="#contact" class="btn btn-primary">Get a Quote</a>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-col">
+                    <h3 style="display: flex; align-items: center; gap: 0.5rem;">
+                        <img src="logo-round.png" alt="Harshita Traders Logo" class="footer-logo-img">
+                        HARSHITA <span>TRADERS</span>
+                    </h3>
+                    <p>Complete Water & Solar Solutions Under One Roof.</p>
+                    <p style="color: var(--accent-green); font-weight: 500;">
+                        Water Treatment | Heat Pumps | Solar | Electrical & Lighting
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About Us</a>
+                        <a href="#solutions">Solutions</a>
+                        <a href="#brands">Brands</a>
+                        <a href="#industries">Industries</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact Details</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="ph-fill ph-user contact-icon"></i>
+                            <div>Mithlesh Kumar</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ph-fill ph-phone contact-icon"></i>
+                            <div>+91 9870203800</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ph-fill ph-envelope-simple contact-icon"></i>
+                            <div>harshitatraders28@gmail.com</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ph-fill ph-globe contact-icon"></i>
+                            <div>www.harshitatraders.com</div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="ph-fill ph-map-pin contact-icon"></i>
+                            <div>Office No. 209, Gupta Arcade, Plot No. 4 L.S.C., Shrestha Vihar, Delhi - 110092</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Harshita Traders. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script for animations and navbar -->
+    <script src="script.js?v=9"></script>
+</body>
+</html>
