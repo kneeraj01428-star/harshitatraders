@@ -122,3 +122,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Quote Modal Logic
+function openQuoteModal(productName = '') {
+    const overlay = document.getElementById('quote-modal-overlay');
+    const productInput = document.getElementById('quote-product');
+    if (productInput) productInput.value = productName;
+    if (overlay) overlay.classList.add('active');
+}
+
+function closeQuoteModal() {
+    const overlay = document.getElementById('quote-modal-overlay');
+    if (overlay) overlay.classList.remove('active');
+    const form = document.getElementById('quote-form');
+    if (form) form.reset();
+}
+
+function submitQuoteForm(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('quote-name').value;
+    const phone = document.getElementById('quote-phone').value;
+    const quantity = document.getElementById('quote-quantity').value;
+    const req = document.getElementById('quote-req').value;
+    const product = document.getElementById('quote-product').value;
+    
+    let message = `*New Quote Request*\n\n`;
+    message += `*Name:* ${name}\n`;
+    message += `*Contact Number:* ${phone}\n`;
+    if (product) message += `*Product of Interest:* ${product}\n`;
+    if (quantity) message += `*Quantity:* ${quantity}\n`;
+    if (req) message += `*Requirements:* ${req}\n`;
+    
+    const whatsappUrl = `https://wa.me/919870203800?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+    
+    closeQuoteModal();
+}
