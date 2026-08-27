@@ -347,13 +347,12 @@ ul {
 }
 
 .solution-card {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
   padding: 2.5rem;
   border-radius: 1rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 15px rgba(2, 48, 71, 0.05);
   transition: var(--transition);
-  border: 1px solid rgba(2, 48, 71, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -375,8 +374,8 @@ ul {
 
 .solution-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 30px rgba(2, 48, 71, 0.15);
-  border-color: rgba(33, 158, 188, 0.4);
+  box-shadow: 0 20px 30px rgba(2, 48, 71, 0.1);
+  border-color: rgba(33, 158, 188, 0.3);
 }
 
 .solution-card:hover::before {
@@ -386,7 +385,7 @@ ul {
 .icon-wrapper {
   width: 65px;
   height: 65px;
-  background: linear-gradient(135deg, rgba(33, 158, 188, 0.1), rgba(16, 185, 129, 0.15));
+  background: white; /* Make the icon wrapper white to contrast with sky blue block */
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -399,8 +398,6 @@ ul {
 }
 
 .solution-card:hover .icon-wrapper {
-  background: linear-gradient(135deg, var(--secondary-blue), var(--accent-green));
-  color: white;
   transform: scale(1.1) rotate(5deg);
 }
 
@@ -408,10 +405,12 @@ ul {
   font-size: 1.4rem;
   color: var(--primary-blue);
   margin-bottom: 1rem;
+  transition: var(--transition);
 }
 
 .solution-card p {
-  color: var(--text-gray);
+  color: #334155;
+  transition: var(--transition);
 }
 
 /* Why Choose Us & About */
@@ -1001,40 +1000,46 @@ ul {
 
 /* Category Specific Colors */
 /* Water */
-.color-water .icon-wrapper { background: linear-gradient(135deg, rgba(33, 158, 188, 0.1), rgba(33, 158, 188, 0.2)); color: #219ebc; }
-.color-water:hover { border-color: rgba(33, 158, 188, 0.4); }
-.color-water:hover .icon-wrapper { background: linear-gradient(135deg, #023047, #219ebc); color: white; }
-.text-water { color: #219ebc !important; }
+.color-water .icon-wrapper { color: #0284c7; box-shadow: 0 4px 10px rgba(2, 132, 199, 0.1); }
+.color-water:hover { border-color: rgba(2, 132, 199, 0.3); box-shadow: 0 15px 30px rgba(2, 132, 199, 0.15); }
+.color-water:hover .icon-wrapper { background: linear-gradient(135deg, #0284c7, #38bdf8); color: white; }
+.color-water h3 { color: #0284c7; }
+.text-water { color: #0284c7 !important; }
 
 /* Heat */
-.color-heat .icon-wrapper { background: linear-gradient(135deg, rgba(251, 133, 0, 0.1), rgba(251, 133, 0, 0.2)); color: #fb8500; }
-.color-heat:hover { border-color: rgba(251, 133, 0, 0.4); }
-.color-heat:hover .icon-wrapper { background: linear-gradient(135deg, #e85d04, #fb8500); color: white; }
-.text-heat { color: #fb8500 !important; }
+.color-heat .icon-wrapper { color: #ea580c; box-shadow: 0 4px 10px rgba(234, 88, 12, 0.1); }
+.color-heat:hover { border-color: rgba(234, 88, 12, 0.3); box-shadow: 0 15px 30px rgba(234, 88, 12, 0.15); }
+.color-heat:hover .icon-wrapper { background: linear-gradient(135deg, #ea580c, #fb923c); color: white; }
+.color-heat h3 { color: #ea580c; }
+.text-heat { color: #ea580c !important; }
 
 /* Solar */
-.color-solar .icon-wrapper { background: linear-gradient(135deg, rgba(255, 183, 3, 0.1), rgba(255, 183, 3, 0.2)); color: #ffb703; }
-.color-solar:hover { border-color: rgba(255, 183, 3, 0.4); }
-.color-solar:hover .icon-wrapper { background: linear-gradient(135deg, #fb8500, #ffb703); color: white; }
-.text-solar { color: #ffb703 !important; }
+.color-solar .icon-wrapper { color: #ca8a04; box-shadow: 0 4px 10px rgba(202, 138, 4, 0.1); }
+.color-solar:hover { border-color: rgba(202, 138, 4, 0.3); box-shadow: 0 15px 30px rgba(202, 138, 4, 0.15); }
+.color-solar:hover .icon-wrapper { background: linear-gradient(135deg, #ca8a04, #facc15); color: white; }
+.color-solar h3 { color: #ca8a04; }
+.text-solar { color: #ca8a04 !important; }
 
 /* Lighting */
-.color-lighting .icon-wrapper { background: linear-gradient(135deg, rgba(252, 191, 73, 0.1), rgba(252, 191, 73, 0.2)); color: #f77f00; }
-.color-lighting:hover { border-color: rgba(252, 191, 73, 0.4); }
-.color-lighting:hover .icon-wrapper { background: linear-gradient(135deg, #f77f00, #fcbf49); color: white; }
-.text-lighting { color: #f77f00 !important; }
+.color-lighting .icon-wrapper { color: #d97706; box-shadow: 0 4px 10px rgba(217, 119, 6, 0.1); }
+.color-lighting:hover { border-color: rgba(217, 119, 6, 0.3); box-shadow: 0 15px 30px rgba(217, 119, 6, 0.15); }
+.color-lighting:hover .icon-wrapper { background: linear-gradient(135deg, #d97706, #fbbf24); color: white; }
+.color-lighting h3 { color: #d97706; }
+.text-lighting { color: #d97706 !important; }
 
 /* Pumps */
-.color-pumps .icon-wrapper { background: linear-gradient(135deg, rgba(2, 48, 71, 0.1), rgba(2, 48, 71, 0.2)); color: #023047; }
-.color-pumps:hover { border-color: rgba(2, 48, 71, 0.4); }
-.color-pumps:hover .icon-wrapper { background: linear-gradient(135deg, #023047, #219ebc); color: white; }
-.text-pumps { color: #023047 !important; }
+.color-pumps .icon-wrapper { color: #0369a1; box-shadow: 0 4px 10px rgba(3, 105, 161, 0.1); }
+.color-pumps:hover { border-color: rgba(3, 105, 161, 0.3); box-shadow: 0 15px 30px rgba(3, 105, 161, 0.15); }
+.color-pumps:hover .icon-wrapper { background: linear-gradient(135deg, #0369a1, #38bdf8); color: white; }
+.color-pumps h3 { color: #0369a1; }
+.text-pumps { color: #0369a1 !important; }
 
 /* Projects */
-.color-projects .icon-wrapper { background: linear-gradient(135deg, rgba(114, 9, 183, 0.1), rgba(114, 9, 183, 0.2)); color: #7209b7; }
-.color-projects:hover { border-color: rgba(114, 9, 183, 0.4); }
-.color-projects:hover .icon-wrapper { background: linear-gradient(135deg, #4361ee, #7209b7); color: white; }
-.text-projects { color: #7209b7 !important; }
+.color-projects .icon-wrapper { color: #7e22ce; box-shadow: 0 4px 10px rgba(126, 34, 206, 0.1); }
+.color-projects:hover { border-color: rgba(126, 34, 206, 0.3); box-shadow: 0 15px 30px rgba(126, 34, 206, 0.15); }
+.color-projects:hover .icon-wrapper { background: linear-gradient(135deg, #7e22ce, #c084fc); color: white; }
+.color-projects h3 { color: #7e22ce; }
+.text-projects { color: #7e22ce !important; }
 
 /* Symmetrical Layout for Detail Blocks */
 .detail-content-wrapper {
