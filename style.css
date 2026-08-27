@@ -185,8 +185,8 @@ ul {
   width: 100%;
   height: 100%;
   z-index: 2;
-  /* Color grading: light sky blue tint to perfectly suit theme while keeping dark text legible */
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85) 0%, rgba(224, 242, 254, 0.6) 100%);
+  /* Color grading: reduced opacity to make video highly visible */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.35) 0%, rgba(224, 242, 254, 0.25) 100%);
 }
 
 @keyframes float {
