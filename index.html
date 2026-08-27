@@ -468,8 +468,8 @@
                                 <p style="font-size: 1rem; color: var(--text-gray); line-height: 1.5;">High-efficiency heat pumps for hotels, hospitals, and large facilities.</p>
                             </div>
                             
-                            <!-- Product 2 -->
-                            <div style="background: rgba(255,255,255,0.7); padding: 2.5rem 1.5rem; border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1); display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 4px 15px rgba(251, 133, 0, 0.05); transition: transform 0.3s ease;">
+                            <!-- Product 2 (Clickable) -->
+                            <div onclick="document.getElementById('heat-options-view').style.display='none'; document.getElementById('heat-geyser-view').style.display='block'; window.scrollTo({top: document.getElementById('solution-details-container').offsetTop - 80, behavior: 'smooth'});" style="background: rgba(255,255,255,0.7); padding: 2.5rem 1.5rem; border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1); display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 4px 15px rgba(251, 133, 0, 0.05); transition: transform 0.3s ease; cursor: pointer;">
                                 <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(251, 133, 0, 0.1), rgba(251, 133, 0, 0.2)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
                                     <i class="ph-fill ph-drop" style="font-size: 3rem; color: #fb8500;"></i>
                                 </div>
@@ -606,6 +606,190 @@
                                 <span>Mitsubishi Electric</span>
                                 <span style="color: rgba(251, 133, 0, 0.3); font-weight: 300;">|</span>
                                 <span>Venus</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Individual Geyser View -->
+                    <div id="heat-geyser-view" style="display: none; animation: fadeUp 0.5s ease forwards;">
+                        <button onclick="document.getElementById('heat-geyser-view').style.display='none'; document.getElementById('heat-options-view').style.display='block'; window.scrollTo({top: document.getElementById('solution-details-container').offsetTop - 80, behavior: 'smooth'});" class="btn btn-outline" style="margin-bottom: 2rem; border-color: rgba(251, 133, 0, 0.3); color: #fb8500; padding: 0.5rem 1rem;">&larr; Back to Products</button>
+                        
+                        <div class="modal-header" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(251, 133, 0, 0.2); padding-bottom: 1rem;">
+                            <h2 class="text-heat">INDIVIDUAL GEYSER SYSTEMS</h2>
+                            <p style="color: var(--text-gray); font-size: 1.1rem; margin-top: 0.5rem; font-weight: 500;">Say Goodbye to Cold Showers &amp; High Power Bills</p>
+                        </div>
+
+                        <div style="margin-bottom: 3rem; text-align: center;">
+                            <p style="font-size: 1.1rem; color: var(--text-gray); line-height: 1.6; max-width: 800px; margin: 0 auto 1.5rem auto;">
+                                Modern, safe, and energy-efficient individual electric and gas water heaters designed for fast heating, precise temperature control, and long-lasting performance.
+                            </p>
+                            <p style="font-weight: 600; color: #fb8500; font-size: 1.1rem; margin-bottom: 2rem;">Fast Heating • Superior Safety • Maximum Energy Saving</p>
+                            <div style="display: flex; gap: 1rem; justify-content: center;">
+                                <a href="https://wa.me/919870203800?text=Hey,%20I%20want%20a%20Quote%20for%20Individual%20Geysers" class="btn btn-primary" target="_blank">Get a Quote <i class="ph ph-arrow-right"></i></a>
+                                <a href="tel:+919870203800" class="btn btn-outline">Talk to Our Expert</a>
+                            </div>
+                        </div>
+
+                        <div class="detail-content-wrapper" style="margin-bottom: 4rem;">
+                            <div class="detail-text-side">
+                                <h3 class="text-heat" style="margin-bottom: 1rem;">What is an Individual Geyser?</h3>
+                                <p style="color: var(--text-gray); line-height: 1.7; margin-bottom: 1rem;">
+                                    Waiting for water to heat up or dealing with sudden temperature drops can ruin daily routines, while sub-standard water heaters are prone to internal tank corrosion and high energy consumption.
+                                </p>
+                                <p style="color: var(--text-gray); line-height: 1.7;">
+                                    Our individual geyser solutions feature high-density glass-lined storage tanks, titanium heating elements, and multi-stage safety cut-offs to deliver instant, safe, and reliable hot water across residential and light commercial spaces.
+                                </p>
+                            </div>
+                            <div class="detail-image-side" style="background: rgba(251, 133, 0, 0.05); padding: 2rem; border-radius: 1rem; display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; border: 1px solid rgba(251, 133, 0, 0.1);">
+                                <h3 class="text-heat" style="margin-bottom: 0.5rem;">How an Individual Geyser Works</h3>
+                                <div style="display: flex; flex-direction: column; gap: 0.5rem; color: var(--text-gray); font-weight: 500;">
+                                    <div style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-drop" style="color: #fb8500; font-size: 1.2rem;"></i> Cold Water Inflow</div>
+                                    <div style="margin-left: 0.5rem; color: rgba(251, 133, 0, 0.4);">↓</div>
+                                    <div style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-lightning" style="color: #fb8500; font-size: 1.2rem;"></i> Heating Element Activation</div>
+                                    <div style="margin-left: 0.5rem; color: rgba(251, 133, 0, 0.4);">↓</div>
+                                    <div style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-thermometer" style="color: #fb8500; font-size: 1.2rem;"></i> Thermostat Temperature Control</div>
+                                    <div style="margin-left: 0.5rem; color: rgba(251, 133, 0, 0.4);">↓</div>
+                                    <div style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-shield-check" style="color: #fb8500; font-size: 1.2rem;"></i> Heat Retention via PUF Insulation</div>
+                                    <div style="margin-left: 0.5rem; color: rgba(251, 133, 0, 0.4);">↓</div>
+                                    <div style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-shower" style="color: #d81159; font-size: 1.2rem;"></i> Hot Water Dispense</div>
+                                </div>
+                                <p style="font-size: 0.9rem; color: var(--text-gray); margin-top: 1rem; line-height: 1.5;">When powered on, the thermostat activates the heating element to raise water temperature, while dense polyurethane insulation retains thermal energy until the tap is opened.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-heat" style="margin-bottom: 1.5rem; text-align: center;">Our Individual Geyser Solutions</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+                            <!-- Geyser Type 1 -->
+                            <div style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2rem; background: rgba(251, 133, 0, 0.02); border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1);">
+                                <i class="ph-fill ph-bathtub" style="color: #fb8500; font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.2rem;">Storage Electric Geysers</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray);">High-capacity insulated storage units built to supply consistent hot water for family bathrooms and domestic uses.</p>
+                            </div>
+                            <!-- Geyser Type 2 -->
+                            <div style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2rem; background: rgba(251, 133, 0, 0.02); border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1);">
+                                <i class="ph-fill ph-lightning" style="color: #fb8500; font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.2rem;">Instant Electric Geysers</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray);">Compact, high-wattage units designed for immediate hot water delivery at kitchen sinks, hand-wash stations, and quick showers.</p>
+                            </div>
+                            <!-- Geyser Type 3 -->
+                            <div style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2rem; background: rgba(251, 133, 0, 0.02); border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1);">
+                                <i class="ph-fill ph-fire" style="color: #fb8500; font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.2rem;">Gas Water Heaters</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray);">LPG/PNG fired geysers offering ultra-fast heating with zero dependency on heavy electrical loads.</p>
+                            </div>
+                            <!-- Geyser Type 4 -->
+                            <div style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 2rem; background: rgba(251, 133, 0, 0.02); border-radius: 1rem; border: 1px solid rgba(251, 133, 0, 0.1);">
+                                <i class="ph-fill ph-wifi-high" style="color: #fb8500; font-size: 2.5rem; margin-bottom: 1rem;"></i>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.2rem;">Smart &amp; Connected Geysers</h4>
+                                <p style="font-size: 0.95rem; color: var(--text-gray);">Wi-Fi-enabled models featuring mobile app control, custom heating schedules, and digital temperature displays.</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-heat" style="margin-bottom: 1.5rem; text-align: center;">Key Benefits</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(251, 133, 0, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #fb8500; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Ultra-Fast Heating</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">High-grade heating elements rapidly heat water to target temperatures without long waiting times.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(251, 133, 0, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #fb8500; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Advanced Corrosion Protection</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Titanium vitreous enamel glass-lined tanks shield against hard water scaling and tank rust.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(251, 133, 0, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #fb8500; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">High Energy Efficiency</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Thick PUF insulation traps heat inside the tank for hours, minimizing standby power losses.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(251, 133, 0, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #fb8500; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Multi-Layered Safety</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Includes thermal cut-outs, pressure release valves, and shock-proof outer bodies.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(251, 133, 0, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #fb8500; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">High-Rise Compatible</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Pressure-withstanding tanks engineered to endure high bar pressure from hydro-pneumatic pumps.</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: rgba(251, 133, 0, 0.02); border-radius: 0.5rem;">
+                                <i class="ph-fill ph-check-circle" style="color: #fb8500; font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                <div>
+                                    <h4 style="color: var(--text-dark); margin-bottom: 0.25rem;">Precision Temperature Controls</h4>
+                                    <p style="font-size: 0.95rem; color: var(--text-gray);">Adjustable thermostat knobs and digital screens allow easy customization of water warmth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-heat" style="margin-bottom: 1.5rem; text-align: center;">Where Are Individual Geysers Used?</h3>
+                        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 4rem;">
+                            <span style="background: white; padding: 0.5rem 1.5rem; border-radius: 50px; box-shadow: var(--shadow-sm); color: var(--text-dark); font-weight: 500;"><i class="ph-fill ph-house" style="color: #fb8500; margin-right: 0.5rem;"></i> Apartments &amp; Villas</span>
+                            <span style="background: white; padding: 0.5rem 1.5rem; border-radius: 50px; box-shadow: var(--shadow-sm); color: var(--text-dark); font-weight: 500;"><i class="ph-fill ph-bathtub" style="color: #fb8500; margin-right: 0.5rem;"></i> Bathrooms</span>
+                            <span style="background: white; padding: 0.5rem 1.5rem; border-radius: 50px; box-shadow: var(--shadow-sm); color: var(--text-dark); font-weight: 500;"><i class="ph-fill ph-cooking-pot" style="color: #fb8500; margin-right: 0.5rem;"></i> Kitchen Sinks</span>
+                            <span style="background: white; padding: 0.5rem 1.5rem; border-radius: 50px; box-shadow: var(--shadow-sm); color: var(--text-dark); font-weight: 500;"><i class="ph-fill ph-buildings" style="color: #fb8500; margin-right: 0.5rem;"></i> Hotels &amp; Homestays</span>
+                            <span style="background: white; padding: 0.5rem 1.5rem; border-radius: 50px; box-shadow: var(--shadow-sm); color: var(--text-dark); font-weight: 500;"><i class="ph-fill ph-briefcase" style="color: #fb8500; margin-right: 0.5rem;"></i> Office Pantries</span>
+                            <span style="background: white; padding: 0.5rem 1.5rem; border-radius: 50px; box-shadow: var(--shadow-sm); color: var(--text-dark); font-weight: 500;"><i class="ph-fill ph-first-aid" style="color: #fb8500; margin-right: 0.5rem;"></i> Clinics</span>
+                            <span style="background: white; padding: 0.5rem 1.5rem; border-radius: 50px; box-shadow: var(--shadow-sm); color: var(--text-dark); font-weight: 500;"><i class="ph-fill ph-scissors" style="color: #fb8500; margin-right: 0.5rem;"></i> Salons &amp; Spas</span>
+                        </div>
+                        
+                        <h3 class="text-heat" style="margin-bottom: 1.5rem; text-align: center;">Our Range Overview</h3>
+                        <div style="background: white; border-radius: 1rem; overflow: hidden; box-shadow: var(--shadow-sm); margin-bottom: 4rem;">
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); padding: 1rem 2rem; border-bottom: 1px solid rgba(0,0,0,0.05); font-weight: 600; color: var(--text-dark);">
+                                <div>Model Type</div>
+                                <div>Typical Application</div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); padding: 1rem 2rem; border-bottom: 1px solid rgba(0,0,0,0.05); color: var(--text-gray);">
+                                <div style="font-weight: 500;">Instant Water Heater (3L - 5L)</div>
+                                <div>Kitchen sinks, quick hand-wash stations</div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); padding: 1rem 2rem; border-bottom: 1px solid rgba(0,0,0,0.05); color: var(--text-gray);">
+                                <div style="font-weight: 500;">Storage Water Heater (10L - 50L)</div>
+                                <div>Full bathroom showers, bathtubs</div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); padding: 1rem 2rem; border-bottom: 1px solid rgba(0,0,0,0.05); color: var(--text-gray);">
+                                <div style="font-weight: 500;">Smart Wi-Fi Electric Geyser</div>
+                                <div>Modern smart homes, luxury apartments</div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); padding: 1rem 2rem; border-bottom: 1px solid rgba(0,0,0,0.05); color: var(--text-gray);">
+                                <div style="font-weight: 500;">Gas Water Heater (LPG/PNG)</div>
+                                <div>Areas with frequent power cuts</div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); padding: 1rem 2rem; border-bottom: 1px solid rgba(0,0,0,0.05); color: var(--text-gray);">
+                                <div style="font-weight: 500;">Horizontal Wall-Mounted Geyser</div>
+                                <div>Bathrooms with false ceilings / low height</div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); padding: 1rem 2rem; border-bottom: 1px solid rgba(0,0,0,0.05); color: var(--text-gray);">
+                                <div style="font-weight: 500;">Under-Sink Mini Geyser</div>
+                                <div>Hidden installations in kitchens</div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(251, 133, 0, 0.05); padding: 2rem; border-radius: 1rem; text-align: center; border: 1px solid rgba(251, 133, 0, 0.1);">
+                            <h3 class="text-heat" style="margin-bottom: 1rem; font-size: 1.2rem;">Trusted Brands</h3>
+                            <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; font-size: 1.3rem; font-weight: 700; color: #fb8500;">
+                                <span>AO Smith</span>
+                                <span style="color: rgba(251, 133, 0, 0.3); font-weight: 300;">|</span>
+                                <span>Racold</span>
+                                <span style="color: rgba(251, 133, 0, 0.3); font-weight: 300;">|</span>
+                                <span>Venus</span>
+                                <span style="color: rgba(251, 133, 0, 0.3); font-weight: 300;">|</span>
+                                <span>Havells</span>
+                                <span style="color: rgba(251, 133, 0, 0.3); font-weight: 300;">|</span>
+                                <span>V-Guard</span>
+                                <span style="color: rgba(251, 133, 0, 0.3); font-weight: 300;">|</span>
+                                <span>Crompton</span>
+                                <span style="color: rgba(251, 133, 0, 0.3); font-weight: 300;">|</span>
+                                <span>Bajaj</span>
                             </div>
                         </div>
                     </div>
