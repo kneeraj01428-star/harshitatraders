@@ -993,6 +993,10 @@ ul {
     padding-top: 6rem;
   }
   
+  .hero-video {
+    object-position: 65% center;
+  }
+  
   .hero h1 {
     font-size: 2.5rem;
   }
