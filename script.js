@@ -159,3 +159,39 @@ function submitQuoteForm(e) {
     
     closeQuoteModal();
 }
+
+// Background Color Scroll Animation
+document.addEventListener('DOMContentLoaded', () => {
+    // Theme color stops (Soft Cyan -> Soft Orange -> Soft Yellow -> Soft Green -> Soft Blue)
+    const colorStops = [
+        { h: 195, s: 70, l: 96 }, // Top/Hero: Soft Cyan/Blue (Water)
+        { h: 28,  s: 85, l: 96 }, // Middle: Soft Orange (Heat Pumps)
+        { h: 45,  s: 85, l: 95 }, // Lower-mid: Soft Yellow (Solar)
+        { h: 160, s: 60, l: 96 }, // Lower: Soft Green (About)
+        { h: 195, s: 70, l: 96 }  // Bottom: Soft Cyan/Blue (Footer)
+    ];
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        
+        if (maxScroll <= 0) return;
+        
+        let scrollFraction = scrollTop / maxScroll;
+        if (scrollFraction < 0) scrollFraction = 0;
+        if (scrollFraction > 1) scrollFraction = 1;
+        
+        const totalSegments = colorStops.length - 1;
+        const segment = Math.min(Math.floor(scrollFraction * totalSegments), totalSegments - 1);
+        const segmentFraction = (scrollFraction * totalSegments) - segment;
+        
+        const start = colorStops[segment];
+        const end = colorStops[segment + 1];
+        
+        const h = start.h + (end.h - start.h) * segmentFraction;
+        const s = start.s + (end.s - start.s) * segmentFraction;
+        const l = start.l + (end.l - start.l) * segmentFraction;
+        
+        document.body.style.backgroundColor = `hsl(${h}, ${s}%, ${l}%)`;
+    });
+});
