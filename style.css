@@ -417,14 +417,50 @@ ul {
 /* Trusted Brands */
 .brands {
   background: var(--bg-white);
+  overflow: hidden;
+  position: relative;
+  padding: 4rem 0;
+}
+
+.brands::before,
+.brands::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.brands::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+.brands::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
+
+.brand-marquee-container {
+  display: flex;
+  width: fit-content;
+  animation: scroll 40s linear infinite;
+}
+
+.brand-marquee-container:hover {
+  animation-play-state: paused;
 }
 
 .brand-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
+  display: flex;
+  gap: 4rem;
   align-items: center;
-  justify-items: center;
+  padding: 0 2rem;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .brand-item {
@@ -434,27 +470,22 @@ ul {
   gap: 1rem;
   font-size: 1.1rem;
   font-weight: 700;
-  color: #64748b;
+  color: #023047;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: var(--transition);
+  min-width: 120px;
 }
 
 .brand-item img {
   width: auto;
   height: 50px;
   object-fit: contain;
-  filter: grayscale(100%) opacity(0.7);
   transition: var(--transition);
 }
 
 .brand-item:hover {
-  color: #023047;
   transform: translateY(-5px);
-}
-
-.brand-item:hover img {
-  filter: grayscale(0%) opacity(1);
 }
 
 /* Industries We Serve */
