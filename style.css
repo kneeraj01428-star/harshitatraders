@@ -368,7 +368,7 @@ ul {
 
 /* Core Solutions */
 .solutions {
-  background: var(--bg-white);
+  background: transparent;
 }
 
 .solutions-grid {
@@ -487,35 +487,12 @@ ul {
 
 /* Trusted Brands */
 .brands {
-  background: var(--bg-white);
+  background: transparent;
   overflow: hidden;
   position: relative;
   padding: 4rem 0;
-}
-
-.brands::before,
-.brands::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 50px;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
-}
-@media (min-width: 768px) {
-  .brands::before,
-  .brands::after {
-    width: 150px;
-  }
-}
-.brands::before {
-  left: 0;
-  background: linear-gradient(to right, white, transparent);
-}
-.brands::after {
-  right: 0;
-  background: linear-gradient(to left, white, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .brand-marquee-container {
