@@ -451,10 +451,12 @@ ul {
   display: flex;
   width: max-content;
   animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
 }
 
 .brand-marquee-container:hover {
   animation-play-state: paused;
+  -webkit-animation-play-state: paused;
 }
 
 .brand-grid {
@@ -474,6 +476,10 @@ ul {
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+@-webkit-keyframes scroll {
+  0% { -webkit-transform: translateX(0); }
+  100% { -webkit-transform: translateX(-50%); }
 }
 
 .brand-item {
