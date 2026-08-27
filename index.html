@@ -959,7 +959,59 @@
                 </div>
                 
                 <!-- Detail: Solar -->
-                <div id="detail-solar" class="solution-detail-block" style="display: none;"><div class="modal-header"><h2 class="text-solar">Solar Energy Solutions</h2></div></div>
+                <div id="detail-solar" class="solution-detail-block" style="display: none;">
+                    <div id="solar-options-view">
+                        <div class="modal-header">
+                            <h2 class="text-solar">SOLAR ENERGY SOLUTIONS</h2>
+                            <p style="color: var(--text-gray); font-size: 1.1rem; margin-top: 0.5rem; font-weight: 500;">Harness the power of the sun</p>
+                        </div>
+
+                        <div style="margin-bottom: 3rem;">
+                            <p style="font-size: 1.1rem; color: var(--text-gray); line-height: 1.6; max-width: 800px;">
+                                We provide robust and highly efficient solar energy solutions designed for residential, commercial, and industrial applications. Switch to clean energy and reduce your carbon footprint.
+                            </p>
+                        </div>
+
+                        <h3 class="text-solar" style="margin-bottom: 1.5rem; text-align: center;">Products</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                            <!-- Product 1 (Clickable) -->
+                            <div onclick="document.getElementById('solar-options-view').style.display='none'; document.getElementById('solar-panel-view').style.display='block'; window.scrollTo({top: document.getElementById('solution-details-container').offsetTop - 80, behavior: 'smooth'});" style="background: rgba(255,255,255,0.7); padding: 2.5rem 1.5rem; border-radius: 1rem; border: 1px solid rgba(202, 138, 4, 0.1); display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 4px 15px rgba(202, 138, 4, 0.05); transition: transform 0.3s ease; cursor: pointer;">
+                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(202, 138, 4, 0.1), rgba(202, 138, 4, 0.2)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                                    <i class="ph-fill ph-solar-panel" style="font-size: 3rem; color: #ca8a04;"></i>
+                                </div>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.3rem;">Solar Panel</h4>
+                                <p style="font-size: 1rem; color: var(--text-gray); line-height: 1.5;">High-efficiency solar panels for maximizing energy generation.</p>
+                            </div>
+                            
+                            <!-- Product 2 (Clickable) -->
+                            <div onclick="document.getElementById('solar-options-view').style.display='none'; document.getElementById('solar-inverter-view').style.display='block'; window.scrollTo({top: document.getElementById('solution-details-container').offsetTop - 80, behavior: 'smooth'});" style="background: rgba(255,255,255,0.7); padding: 2.5rem 1.5rem; border-radius: 1rem; border: 1px solid rgba(202, 138, 4, 0.1); display: flex; flex-direction: column; align-items: center; text-align: center; box-shadow: 0 4px 15px rgba(202, 138, 4, 0.05); transition: transform 0.3s ease; cursor: pointer;">
+                                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, rgba(202, 138, 4, 0.1), rgba(202, 138, 4, 0.2)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                                    <i class="ph-fill ph-lightning" style="font-size: 3rem; color: #ca8a04;"></i>
+                                </div>
+                                <h4 style="color: var(--text-dark); margin-bottom: 0.5rem; font-size: 1.3rem;">Solar Inverter</h4>
+                                <p style="font-size: 1rem; color: var(--text-gray); line-height: 1.5;">Reliable inverters to convert and manage your solar power seamlessly.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1. Solar Panel View (Placeholder) -->
+                    <div id="solar-panel-view" style="display: none; animation: fadeUp 0.5s ease forwards;">
+                        <button onclick="document.getElementById('solar-panel-view').style.display='none'; document.getElementById('solar-options-view').style.display='block'; window.scrollTo({top: document.getElementById('solution-details-container').offsetTop - 80, behavior: 'smooth'});" class="btn btn-outline" style="margin-bottom: 2rem; border-color: rgba(202, 138, 4, 0.3); color: #ca8a04; padding: 0.5rem 1rem;">&larr; Back to Products</button>
+                        <div class="modal-header" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(202, 138, 4, 0.2); padding-bottom: 1rem;">
+                            <h2 class="text-solar">SOLAR PANELS</h2>
+                        </div>
+                        <p style="text-align: center; color: var(--text-gray); font-size: 1.1rem; padding: 4rem;">Detailed content for Solar Panels goes here...</p>
+                    </div>
+
+                    <!-- 2. Solar Inverter View (Placeholder) -->
+                    <div id="solar-inverter-view" style="display: none; animation: fadeUp 0.5s ease forwards;">
+                        <button onclick="document.getElementById('solar-inverter-view').style.display='none'; document.getElementById('solar-options-view').style.display='block'; window.scrollTo({top: document.getElementById('solution-details-container').offsetTop - 80, behavior: 'smooth'});" class="btn btn-outline" style="margin-bottom: 2rem; border-color: rgba(202, 138, 4, 0.3); color: #ca8a04; padding: 0.5rem 1rem;">&larr; Back to Products</button>
+                        <div class="modal-header" style="margin-bottom: 2rem; border-bottom: 1px solid rgba(202, 138, 4, 0.2); padding-bottom: 1rem;">
+                            <h2 class="text-solar">SOLAR INVERTERS</h2>
+                        </div>
+                        <p style="text-align: center; color: var(--text-gray); font-size: 1.1rem; padding: 4rem;">Detailed content for Solar Inverters goes here...</p>
+                    </div>
+                </div>
 
                 <!-- Detail: Lighting -->
                 <div id="detail-lighting" class="solution-detail-block" style="display: none;"><div class="modal-header"><h2 class="text-lighting">Lighting & Electrical Solutions</h2></div></div>
