@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150">
+  <!-- Plus Sign -->
+  <rect x="20" y="60" width="80" height="25" fill="#023047" rx="2" ry="2"/>
+  <rect x="47.5" y="32.5" width="25" height="80" fill="#023047" rx="2" ry="2"/>
+  
+  <!-- Text -->
+  <text x="140" y="65" font-family="Arial, sans-serif" font-weight="800" font-size="45" fill="#023047">EUREKA</text>
+  <text x="140" y="115" font-family="Arial, sans-serif" font-weight="900" font-size="55" fill="#023047">FORBES</text>
+</svg>
